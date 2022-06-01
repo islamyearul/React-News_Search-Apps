@@ -30,21 +30,6 @@ class App extends React.Component {
         alert("Something Was Wrong");
         this.setState({ isLoading: false })
       })
-
-    // let news = new News(newsCategory.technology);
-    // news.getNews().then(data =>{
-    //   console.log(data);
-    // })
-    // const url = `${process.env.REACT_APP_NEWS_API_URL}?apikey=${process.env.REACT_APP_NEWS_API_KEY}&category=${this.state.category}&pageSize=5`;
-    // axios.get(url)
-    // .then(response => {  
-    //   this.setState({ news: response.data.articles });
-    //   console.log(this.state.news);
-    // })
-    // .catch(e => {
-    //   console.log(e);
-    // } 
-    // );
   }
 
   next = () => {
@@ -120,20 +105,7 @@ class App extends React.Component {
       })
   }
 
-  // componentDidUpdate(prevProps, prevState) {
-  //   // if(prevState.category !== this.state.category){
-  //   //   const url = `${process.env.REACT_APP_NEWS_API_URL}?apikey=${process.env.REACT_APP_NEWS_API_KEY}&category=${this.state.category}&pageSize=5`;
-  //   //   axios.get(url)
-  //   //   .then(response => {  
-  //   //     this.setState({ news: response.data.articles });
-  //   //     console.log(this.state.news);
-  //   //   })
-  //   //   .catch(e => {
-  //   //     console.log(e);
-  //   //   } 
-  //   //   );
-  //   // }
-  // }
+ 
   render() {
 
     const {
@@ -191,10 +163,8 @@ class App extends React.Component {
         </div>
         <Footer></Footer>
       </>
-
     )
   }
 
 }
-
 export default App;
